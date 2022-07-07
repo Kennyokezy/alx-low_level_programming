@@ -1,1 +1,1 @@
-my first readme for my c projects
+Now C is getting serious
