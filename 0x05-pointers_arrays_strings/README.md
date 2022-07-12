@@ -1,0 +1,1 @@
+pointing arrays to strings
