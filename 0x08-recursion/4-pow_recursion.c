@@ -2,22 +2,18 @@
 #include <stdio.h>
 
 /**
- * factorial - returns the factorial of a number
- *@n: integer being tested
- * Return: the factorial of a number
+ * _pow_recursion - returns the value of x raised to the power of y
+ *@x: number being raised
+ *@y: power to which the number is being raised to
+ * Return: value of x when raised to the power of y
  */
 
-int factorial(int n)
+int _pow_recursion(int x, int y)
 {
-	if (n < 0)
+	if (y < 0)
 		return (-1);
-	if (n == 0)
-	{
+	if (y == 0 || x == 1)
 		return (1);
-	}
 	else
-	{
-		n = n * factorial(n - 1);
-	return (n);
-	}
+		return (x * _pow_recursion(x, y - 1));
 }
